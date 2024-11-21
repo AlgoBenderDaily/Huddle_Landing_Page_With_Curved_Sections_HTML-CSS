@@ -299,8 +299,11 @@ a:any-link {
 .footer__newsletter-form {
   display: flex;
   flex-flow: column;
-  align-items: flex-end;
   gap: 1rem;
+}
+
+.footer__newsletter-form > * {
+  align-self: flex-end;
 }
 
 .footer-newsletter__form-input {
