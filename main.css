@@ -417,6 +417,12 @@ a:any-link {
     text-align: center;
   }
 
+  .header__button:hover,
+  .header__button:focus-visible {
+    color: #ff8ed7;
+    border-color: #ff8ed7;
+  }
+
   /* HERO */
   .hero {
     padding: 0rem 13.1875rem 0rem 13.25rem;
@@ -443,6 +449,11 @@ a:any-link {
     height: 80px;
     margin-bottom: 7.5rem;
     white-space: nowrap;
+  }
+
+  .hero__cta-button:hover,
+  .hero__cta-button:focus-visible {
+    background-color: #ff8ed7;
   }
 
   .hero__preview-image img {
@@ -548,6 +559,11 @@ a:any-link {
     white-space: nowrap;
   }
 
+  .cta__button:hover,
+  .cta__button:focus-visible {
+    background-color: #ff8ed7;
+  }
+
   /* FOOTER */
   .footer {
     flex-flow: row-reverse;
@@ -578,6 +594,11 @@ a:any-link {
     align-self: flex-start;
   }
 
+  .footer-newsletter__form-btn:hover,
+  .footer-newsletter__form-btn:focus-visible {
+    background-color: #ff8ed7;
+  }
+
   .footer__content {
     gap: 1.6875rem;
     margin-bottom: 1.5rem;
@@ -605,5 +626,15 @@ a:any-link {
 
   .footer__social-icon img {
     max-width: 32px;
+  }
+
+  .footer__social-link:hover .footer__social-icon,
+  .footer__social-link:focus-visible .footer__social-icon {
+    display: none;
+  }
+
+  .footer__social-link:hover .responsive-image.footer__social-icon,
+  .footer__social-link:focus-visible .responsive-image.footer__social-icon {
+    display: block;
   }
 }
