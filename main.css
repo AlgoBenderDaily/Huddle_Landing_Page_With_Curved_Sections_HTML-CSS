@@ -106,12 +106,6 @@ a:any-link {
   margin-bottom: 7.5rem;
 }
 
-.hero {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-}
-
 .hero__title {
   font: bold 1.5rem/2.25rem var(--FF2);
   color: #00252e;
@@ -163,6 +157,10 @@ a:any-link {
 
 .stats__icon-communities img {
   max-width: 35.56px;
+}
+
+.stats__icon-messages img {
+  max-width: 31.22px;
 }
 
 .stats__number {
@@ -382,7 +380,7 @@ a:any-link {
 }
 
 .email img {
-  max-width: 20px;
+  max-width: 24px;
 }
 
 .footer__social {
@@ -393,4 +391,219 @@ a:any-link {
 
 .footer__social-icon img {
   max-width: 24px;
+}
+
+@media screen and (min-width: 992px) {
+  /* HEADER */
+  .header {
+    padding-top: 4.875rem;
+    margin-bottom: 14.0625rem;
+  }
+
+  .header__nav {
+    justify-content: space-between;
+  }
+
+  .header__logo img {
+    max-width: 240px;
+    margin-right: 35rem;
+  }
+
+  .header__button {
+    font: normal 1.25rem var(--FF1);
+    border-radius: 20px;
+    width: 136px;
+    height: 40px;
+    text-align: center;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 0rem 13.1875rem 0rem 13.25rem;
+    margin-bottom: 7.5rem;
+  }
+
+  .hero__title {
+    font: bold 3rem/4.5rem var(--FF2);
+    max-width: 1014px;
+    margin-bottom: 1.625rem;
+  }
+
+  .hero__description {
+    font: normal 1.25rem/1.875rem var(--FF1);
+    max-width: 600px;
+    margin-bottom: 3.0625rem;
+  }
+
+  .hero__cta-button {
+    padding: 1.5625rem 6.25rem;
+    font: bold 1.25rem/1.875rem var(--FF1);
+    border-radius: 40px;
+    width: 400px;
+    height: 80px;
+    margin-bottom: 7.5rem;
+    white-space: nowrap;
+  }
+
+  .hero__preview-image img {
+    max-width: 1016px;
+  }
+
+  /* STATS */
+  .stats {
+    background-image: url("./images/bg-section-top-desktop-1.svg");
+    padding-bottom: 18.625rem; /* Come Back */
+  }
+
+  .stats__container {
+    flex-flow: row;
+    gap: 21.3125rem;
+  }
+
+  .stats__icon-communities img {
+    max-width: 56px;
+  }
+
+  .stats__icon-messages img {
+    max-width: 56px;
+  }
+
+  .stats__number {
+    font: bold 6rem/9rem var(--FF1);
+    margin-bottom: 0.125rem;
+  }
+
+  .stats__label {
+    font: normal 1.5rem/2.25rem var(--FF1);
+  }
+
+  /* FEATURES */
+  .features__item {
+    flex-flow: row;
+    justify-content: center;
+    gap: 6.25rem;
+  }
+
+  .features__item:nth-child(odd) {
+    flex-flow: row-reverse;
+  }
+
+  .features__image-container {
+    width: 560px;
+    height: 560px;
+  }
+
+  .features__content {
+    align-items: flex-start;
+    gap: 1.625rem;
+  }
+
+  .features__title {
+    font: bold 2.5rem/3.75rem var(--FF2);
+  }
+
+  .features__description {
+    font: normal 1rem/1.5rem var(--FF1);
+    max-width: 520px;
+    text-align: left;
+  }
+
+  /* GROW */
+  .grow {
+    padding: 0rem 8.125rem;
+  }
+
+  /* CONVERSATIONS */
+  .conversations {
+    background-image: url("./images/bg-section-bottom-desktop-1.svg"),
+      url("./images/bg-section-top-desktop-2.svg");
+    padding: 15.1875rem 7.5rem 15.625rem 7.5rem;
+  }
+
+  /* USERS */
+  .users {
+    padding: 0rem 7.5rem 0rem 7.5rem;
+  }
+
+  /* CTA */
+  .cta {
+    gap: 2.625rem;
+    background-image: url("./images/bg-section-bottom-desktop-2.svg"),
+      url("./images/bg-footer-top-desktop.svg");
+    padding-top: 18.5625rem;
+    padding-bottom: 21rem;
+  }
+
+  .cta__title {
+    font: bold 2.5rem/3.75rem var(--FF2);
+    max-width: 684px;
+  }
+
+  .cta__button {
+    padding: 1.5625rem 6.25rem;
+    width: 400px;
+    height: 80px;
+    font: bold 1.25rem/1.875rem var(--FF1);
+    border-radius: 40px;
+    white-space: nowrap;
+  }
+
+  /* FOOTER */
+  .footer {
+    flex-flow: row-reverse;
+    gap: 21.25rem;
+    padding: 7.625rem 7.5rem 6.4375rem 7.5rem;
+    justify-content: center;
+  }
+
+  .footer__newsletter {
+    gap: 2.5rem;
+  }
+
+  .footer__newsletter-title {
+    font: bold 1.5rem/2.25rem var(--FF1);
+  }
+
+  .footer__newsletter-description {
+    max-width: 344px;
+  }
+
+  .footer__newsletter-form {
+    display: flex;
+    flex-flow: row;
+    gap: 2.5rem;
+  }
+
+  .footer__newsletter-form > * {
+    align-self: flex-start;
+  }
+
+  .footer__content {
+    gap: 1.6875rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .footer__logo img {
+    max-width: 240px;
+  }
+
+  .footer__text {
+    max-width: 340px;
+  }
+
+  .footer__contact {
+    margin-bottom: 5rem;
+  }
+
+  .footer__contact-item a {
+    font: normal 1rem/1.5rem var(--FF1);
+  }
+
+  .footer__social {
+    gap: 1.5rem;
+  }
+
+  .footer__social-icon img {
+    max-width: 32px;
+  }
 }
